@@ -1,35 +1,43 @@
-body {
+html, body {
     font-family: 'PT Sans', sans-serif;
     margin: 0;
+    color: #025e85;
+    font-size: 0.85rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
-    text-align: justify;
-    color: #072227;
+}
+
+h4.white {
+    color: whitesmoke;
 }
 
 p.scripture {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Courgette', cursive;
 }
 
 a {
-    text-decoration: none;
+    font-size: 0.85rem;
 }
 
-.top {
-    border: 1px solid;
-    border-color: #072227;
-    border-width: 100%;
-    background-color: darkcyan;
-}
-
-.topbar {
-    text-align: right;
-    font-size: 0.8rem;
-}
-
-.icon {
+img {
     float: left;
-    position: static;
+    margin-right: 20px;
 }
+
+img.rcorners {
+    width: 125px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.w3-sidebar {
+    z-index: 3;
+    width: 130px;
+    top: 33px;
+    bottom: 0;
+    height: inherit;
+    border-right: slategrey 1px solid;
+  }

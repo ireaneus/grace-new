@@ -8,13 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&family=PT+Sans&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Courgette&family=PT+Sans&display=swap" rel="stylesheet">
 
 <!-- Stylesheets -->
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 
 <!-- Font Awesome -->
 
@@ -22,12 +25,115 @@
 
 </head>
     <body>
-       <div class="top">
-        <i class="fas fa-church icon"></i>
-            <div class="topbar">
-            <a href="#">About</a> | <a href="#">Contact</a>    
+
+<!-- TopBar Section -->        
+        <div class="w3-top">
+            <div class="w3-card w3-right-align w3-theme-d1 text-small">
+              <a class="w3-card-item w3-button w3-right w3-hide-large w3-hover-teal w3-theme-d3" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-church"></i></a>
+              <a href="about.html" class="w3-card-item w3-button w3-hide-small w3-hover-teal">About</a>
+              <a href="#" class="w3-card-item w3-button w3-hide-small w3-hover-teal">Contact</a>
+              <a href="#" class="w3-card-item w3-button w3-hide-small w3-hover-teal">Site Map</a>
+              <a href="#" class="w3-card-item w3-button w3-hover-teal">
+                <!-- ########### This is for the Current date ################# -->
+                  <script language="javascript">
+              
+                  // Array of day names
+                  var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+                  var monthNames = new Array("January","February","March","April","May","June","July",
+                                         "August","September","October","November","December");
+                  var dt = new Date();
+                  var y  = dt.getYear();
+                  // Y2K compliant
+                  if (y < 1000) y +=1900;
+                  document.write(dayNames[dt.getDay()] + ", " + monthNames[dt.getMonth()] + " " + dt.getDate() + ", " + y);
+                  // -->
+                  </script></a>
             </div>
-       </div> 
+          </div>
+
+
+<!-- Sidebar Section -->
+
+<nav class="w3-sidebar w3-theme-l3 w3-bar-block w3-collapse w3-large" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large w3-hover-teal w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <hr>
+    <h4 class="w3-bar-item">Sermon List</h4>
+    <div class="text-small">
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Bible Survey</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Old Testament</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">New Testament</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Prophecy</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Resurrection</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Topical</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Christmas</a>
+    <a class="w3-bar-item w3-button w3-hover-teal" href="#">Revelation</a>
+<hr>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:130px">
+
+    <div class="w3-container">
+        <div class="w3-row w3-padding-64">
+            <img src="images/logo.gif" alt="Grace Fellowship of Mountain Home ID - Resurrected">
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <div class="w3-row w3-twothird w3-padding-64">
+           <img src="images/Pastor_2.jpg" class="rcorners">
+            <h1>Pastor Jack Hurley</h1>
+            <p class="text-small">(1993 - 2004)</p>
+        </div>
+        <div class="w3-row w3-third w3-padding-64 w3-panel w3-leftbar w3-theme-l5 ">
+            <p class="w3-large scripture"><i>"The Lord bless you, and keep you; <br>The Lord make His face shine on you, <br>And be gracious to you; <br>The Lord lift up His countenance on you, <br>And give you peace."</i></p>
+            <p>Num. 6:24-26</p>
+        </div>
+    </div>    
+
+<!-- Footer Section -->
+    <footer id="myFooter" class="w3-bottom w3-center">
+        <div class="w3-container w3-card w3-theme-d1 w3-padding-16">
+            <h4 class="white">Our Location</h4>
+            <p class="text-small">We were located 1 mile from the Air Force Base, or 9 miles west from Mountain Home on Airbase road
+        </div>
+    
+      </footer>
+    
+</div>  
+<!-- Sidebar JavaScript -->
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+        
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+        
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+          } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+          }
+        }
+        
+        // Close the sidebar with the close button
+        function w3_close() {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        }
+        </script>
 
     </body>
 </html>
