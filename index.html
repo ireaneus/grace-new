@@ -34,7 +34,7 @@
             <div class="w3-card w3-right-align w3-theme-d1 text-small">
               <a class="w3-card-item w3-button w3-right w3-hide-large w3-hover-slate w3-theme-d3" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-church"></i></a>
               <a href="#" class="w3-card-item w3-button w3-hover-slate w3-hover-border-black">Contact</a>
-              <a href="" class="w3-card-item w3-button">
+              <button href="" class="w3-card-item w3-button">
                 <!-- ########### This is for the Current date ################# -->
                   <script language="javascript">
               
@@ -48,28 +48,47 @@
                   if (y < 1000) y +=1900;
                   document.write(dayNames[dt.getDay()] + ", " + monthNames[dt.getMonth()] + " " + dt.getDate() + ", " + y);
                   // -->
-                  </script></a>
+                  </script></button>
             </div>
           </div>
 
 
 <!-- Sidebar Section -->
 
-<nav class="w3-sidebar w3-theme-l3 w3-bar-block w3-collapse w3-large" id="mySidebar">
+<nav class="w3-sidebar w3-card w3-theme-l3 w3-bar-block w3-collapse w3-large" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large w3-hover-slate w3-hide-large" title="Close Menu">
       <i class="fa fa-remove"></i>
     </a>
  
     <h4 class="w3-bar-item">Sermon List</h4>
     <div class="text-small">
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Bible Survey</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Old Testament</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">New Testament</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Prophecy</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Resurrection</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Topical</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Christmas</a>
-    <a class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-border-black" href="#">Revelation</a>
+    
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Bible Survey</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Doctrine of the Bible</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Tulip</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Gospel in the stars</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-bar-item w3-button w3-hover-text-teal">Old Testament <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content">
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Habakkuk</a>
+    </div>
+  </div>
+  <div class="w3-dropdown-hover">
+    <button class="w3-bar-item w3-button w3-hover-text-teal">New Testament <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content">
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Acts</a>
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Romans</a>
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">1 Corinthians</a>
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">2 Corinthians</a>
+      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Galatians</a>
+    </div>
+  </div>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Entering the Land</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Prophecy</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Resurrection</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Topical</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Christmas</a>
+    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Revelation</a>
     </div>
   </nav>
 

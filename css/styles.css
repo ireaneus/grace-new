@@ -23,7 +23,7 @@ p.scripture {
     text-align: center;
 }
 
-a {
+a, button {
     font-size: 0.85rem;
 }
 
