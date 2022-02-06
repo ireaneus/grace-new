@@ -1,20 +1,14 @@
 html, body {
     font-family: 'PT Sans', sans-serif;
     margin: 0;
-    color: #025e85;
-    font-size: 0.85rem;
+    font-size: 0.87rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
-}
-
-h1 {
+    text-align: center;
+    color: #025e85;
     margin-top: 0;
-}
-
-p {
-    margin: 0 10px;
 }
 
 h4.white {
@@ -32,7 +26,13 @@ a {
 
 img {
     float: left;
-    margin-right: 20px;
+    margin: 0 20px 10px 0;
+}
+
+img.width {
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.rcorners {
@@ -49,4 +49,10 @@ img.rcorners {
     bottom: 0;
     height: inherit;
     border-right: slategrey 1px solid;
-  }
+}
+
+.w3-bottom {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
