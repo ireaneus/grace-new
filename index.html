@@ -31,10 +31,10 @@
 
 <!-- TopBar Section -->        
         <div class="w3-top">
-            <div class="w3-card w3-right-align w3-theme-d1 text-small">
-              <a class="w3-card-item w3-button w3-right w3-hide-large w3-hover-slate w3-theme-d3" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-church"></i></a>
-              <a href="#" class="w3-card-item w3-button w3-hover-slate w3-hover-border-black">Contact</a>
-              <button href="" class="w3-card-item w3-button">
+            <div class="w3-bar w3-right-align w3-theme-d1 text-small">
+              <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-blue-grey w3-theme-d3" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-church"></i></a>
+              <a href="#" class="w3-card-item w3-button w3-hover-blue-grey">Contact</a>
+              <button class="w3-card-item w3-button w3-hover-blue-grey">
                 <!-- ########### This is for the Current date ################# -->
                   <script language="javascript">
               
@@ -56,40 +56,215 @@
 <!-- Sidebar Section -->
 
 <nav class="w3-sidebar w3-card w3-theme-l3 w3-bar-block w3-collapse w3-large" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large w3-hover-slate w3-hide-large" title="Close Menu">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large w3-hover-blue-grey w3-hide-large" title="Close Menu">
       <i class="fa fa-remove"></i>
     </a>
  
-    <h4 class="w3-bar-item">Sermon List</h4>
-    <div class="text-small">
-    
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Bible Survey</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Doctrine of the Bible</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Tulip</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Gospel in the stars</a>
-  <div class="w3-dropdown-hover">
-    <button class="w3-bar-item w3-button w3-hover-text-teal">Old Testament <i class="fa fa-caret-down"></i></button>
-    <div class="w3-dropdown-content">
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Habakkuk</a>
+    <h4 class="w3-card-item">Sermon List</h4>
+
+<!-- Old Testament button -->
+        <button class="w3-button w3-block w3-border-bottom w3-left-align w3-hover-blue-grey" onclick="myAccFunc('OT')">OLD TESTAMENT <i class="fa fa-caret-down"></i></button>
+        <div id="OT" class="w3-bar-block w3-hide w3-white w3-card-4">
+
+  <!-- Daniel Modal -->
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-hover-blue-grey w3-left-align w3-block">Daniel</button>
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+          <header class="w3-container w3-blue-grey"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2 class="white">Pastor Jack Hurley - Daniel Series</h2>
+          </header>
+          <div class="w3-container">
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
+          </div>
+          <footer class="w3-container w3-blue-grey">
+            <p class="w3-center">Daniel Sermon Series - add series summary</p>
+          </footer>
+        </div>
+      </div>
+
+  <!-- Habakkuk Modal -->
+      <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Habakkuk</button>
+
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+          <header class="w3-container w3-blue-grey"> 
+            <span onclick="document.getElementById('id02').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2 class="white">Pastor Jack Hurley - Habakkuk Series</h2>
+          </header>
+          <div class="w3-container">
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+          </div>
+          <footer class="w3-container w3-blue-grey">
+            <p class="w3-center">Habakkuk Sermon Series - add series summary</p>
+          </footer>
+        </div>
+      </div>
+  </div>
+
+  <!-- New Testament button -->
+      <button class="w3-button w3-border-bottom w3-block w3-left-align w3-hover-blue-grey" onclick="myAccFunc('NT')">NEW TESTAMENT <i class="fa fa-caret-down"></i></button>
+  <div id="NT" class="w3-bar-block w3-hide w3-white w3-card-4">
+
+  <!-- Acts Modal -->
+      <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-left-align w3-block w3-hover-blue-grey">Acts</button>
+
+      <div id="id03" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+          <header class="w3-container w3-blue-grey"> 
+            <span onclick="document.getElementById('id03').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2 class="white">Pastor Jack Hurley - Acts Series</h2>
+          </header>
+          <div class="w3-container">
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+            <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
+          </div>
+          <footer class="w3-container w3-blue-grey">
+            <p class="w3-center">Acts Sermon Series - add series summary</p>
+          </footer>
+        </div>
+      </div>
+
+  <!-- Romans Modal -->
+  <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Romans</button>
+
+  <div id="id04" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+        <span onclick="document.getElementById('id04').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 class="white">Pastor Jack Hurley - Romans Series</h2>
+      </header>
+      <div class="w3-container">
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+      </div>
+      <footer class="w3-container w3-blue-grey">
+        <p class="w3-center">Romans Sermon Series - add series summary</p>
+      </footer>
     </div>
   </div>
-  <div class="w3-dropdown-hover">
-    <button class="w3-bar-item w3-button w3-hover-text-teal">New Testament <i class="fa fa-caret-down"></i></button>
-    <div class="w3-dropdown-content">
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Acts</a>
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Romans</a>
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">1 Corinthians</a>
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">2 Corinthians</a>
-      <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Galatians</a>
+
+<!-- 1 Corinthians Modal -->
+    <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">1 Corinthians</button>
+
+    <div id="id05" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-blue-grey"> 
+          <span onclick="document.getElementById('id05').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2 class="white">Pastor Jack Hurley - 1 Corinthians Series</h2>
+        </header>
+        <div class="w3-container">
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+          <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
+        </div>
+        <footer class="w3-container w3-blue-grey">
+          <p class="w3-center">1 Corinthians Sermon Series - add series summary</p>
+        </footer>
+      </div>
     </div>
+
+<!-- 2 Corinthians Modal -->
+<button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">2 Corinthians</button>
+
+<div id="id06" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id06').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  Corinthians Series</h2>
+    </header>
+    <div class="w3-container">
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+      <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">2 Corinthians Sermon Series - add series summary</p>
+    </footer>
   </div>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Entering the Land</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Prophecy</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Resurrection</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Topical</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Christmas</a>
-    <a class="w3-bar-item w3-button w3-hover-none w3-hover-text-teal" href="#">Revelation</a>
-    </div>
+</div>
+
+
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude</a>
+        <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation</a>
+</div>
+
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">BIBLE SURVEY</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">CHRISTMAS</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">DOCTRINE OF THE BIBLE</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">ENTERING THE LAND</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">GOSPEL IN THE STARS</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">PROPHECY</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">RESURRECTION</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">TOPICAL</a>
+    <a class="w3-bar-item w3-button w3-border-bottom w3-hover-blue-grey" href="#">TULIP</a>
+
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -99,18 +274,17 @@
   <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:200px">
 
-    <div class="w3-container">
-        <div class="w3-row w3-padding-top-64 w3-padding-bottom-32">
+  <div class="w3-container">
+        <div class="w3-row-padding w3-padding-top-64 w3-padding-bottom-32">
             <img src="images/logo.gif" alt="Grace Fellowship of Mountain Home ID - Resurrected">
         </div>
-
-    </div>
+  </div>
 
     <div class="w3-container">
-        <div class="w3-row w3-half w3-hide-small w3-padding-64">
+        <div class="w3-row-padding w3-half w3-hide-small w3-padding-64">
           <img src="images/church.jpg" class="width">
         </div>
-        <div class="w3-row w3-half w3-padding-32">
+        <div class="w3-row-padding w3-half w3-padding-32">
           <h4>Grace Fellowship Website - Resurrected</h4>
           <p class="scripture">Dedicated to the memory of Pastor Jack Hurley</p>
           <p>After 15 years of being offline this website is being <i>"Resurrected"</i></p>
@@ -122,10 +296,10 @@
     </div>
 
     <div class="w3-container">
-        <div class="w3-row w3-third w3-hide-small w3-padding-32">
+        <div class="w3-row-padding w3-quarter w3-hide-small w3-padding-32">
            <img src="images/Pastor_2.jpg" class="rcorners">
         </div>
-        <div class="w3-row w3-twothird w3-padding-24">
+        <div class="w3-row-padding w3-twothird w3-padding-24">
           <h4>About Pastor Jack Hurley</h4>
           <p class="scripture">Pastor at Grace Fellowship from 1993 - 2004<br>Pastor Jack went to be with the Lord suddenly in February 2004.</p>
           <p>Following his twenty year career in the Air Force with a tour in the Viet Nam as a RF-4C pilot, pastor Jack Hurley retired from Mountain Home AFB.&nbsp;&nbsp;After retirement, he attended and graduated from Trinity Evangelical Divinity School in Deerfield, IL with a Master of Divinity degree.&nbsp;&nbsp;While at seminary, he pastored a small church in a neighboring town.</p>
@@ -139,10 +313,10 @@
         </div>
 
         <div class="w3-container">
-            <div class="w3-row w3-half w3-hide-small w3-padding-32">
+            <div class="w3-row-padding w3-half w3-hide-small w3-padding-32">
               <img src="images/churchus.jpg" class="rcorners" title="Our church body">
             </div>
-            <div class="w3-row w3-half w3-padding-24">
+            <div class="w3-row-padding w3-half w3-padding-24">
               <h4>About our Church</h4>
               <p>Grace Fellowship of Mountain Home is a body of believers in Jesus Christ who are joined together for the worship, service, prayer, fellowship, discipleship, evangelism and for the observance of the ordinances of baptism and the Lord's supper as set forth in the Bible.</p>
 
@@ -153,7 +327,7 @@
     </div>    
 
 <!-- Footer Section -->
-    <footer id="myFooter" class="w3-bottom w3-card w3-center">
+    <footer id="myFooter" class="w3-bottom w3-bar w3-center">
         <div class="w3-container w3-theme-d1">
             <p class="scripture"><i>"The Lord bless you, and keep you; <br>The Lord make His face shine on you, <br>And be gracious to you; <br>The Lord lift up His countenance on you, <br>And give you peace."</i></p>
             <p>Num. 6:24-26</p>
@@ -187,6 +361,20 @@
           mySidebar.style.display = "none";
           overlayBg.style.display = "none";
         }
+
+        // Accordion drop list - Testament
+        function myAccFunc(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-blue-grey";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace(" w3-blue-grey", "");
+          }
+        }
+
         </script>
 
     </body>

@@ -11,13 +11,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
 
-h4.white {
+.white {
     color: whitesmoke;
 }
 
-p {
-    padding: 0 32px;
-}
 p.scripture {
     font-family: 'Courgette', cursive;
     text-align: center;
@@ -32,13 +29,11 @@ img {
 }
 
 img.width {
-    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.rcorners {
     border-radius: 8px;
-    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -55,12 +50,7 @@ img.rcorners {
     width: 100%;
     z-index: 1;
 }
-.w3-third {
-    width: 25%;
-}
-.w3-twothird {
-    width: 75%;
-}
-.w3-half{
-    width: 50%;
+
+.w3-border-bottom {
+    border-bottom: 1px solid #7C99AC !important;
 }
