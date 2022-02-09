@@ -31,10 +31,12 @@
 
 <!-- TopBar Section -->        
   <div class="w3-top">
-            <div class="w3-bar w3-right-align w3-theme-d1 text-small">
-              <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-blue-grey w3-theme-d3" href="javascript:void(0)" onclick="w3_open()"><i class="fas fa-church"></i></a>
-              <a href="#" class="w3-card-item w3-button w3-hover-blue-grey">Contact</a>
-              <button class="w3-card-item w3-button w3-hover-blue-grey">
+            <div class="w3-bar w3-right-align w3-theme-d1">
+
+              <h6 class="white w3-center" style="margin-top: 0;">Grace Fellowship of Mountain Home Idaho - Resurrected
+              <button class="w3-button w3-left w3-hover-blue-grey" onclick="w3_open()"><i class="fas fa-church"></i></button>
+              <a href="#" class="w3-card-item w3-right w3-button w3-hover-blue-grey">Contact</a>
+              <button class="w3-card-item w3-button w3-right w3-hover-blue-grey" style="margin-top: 0;">
                 <!-- ########### This is for the Current date ################# -->
                   <script language="javascript">
               
@@ -48,17 +50,16 @@
                   if (y < 1000) y +=1900;
                   document.write(dayNames[dt.getDay()] + ", " + monthNames[dt.getMonth()] + " " + dt.getDate() + ", " + y);
                   // -->
-                  </script></button>
+                  </script></button></h6>
             </div>
   </div>
 
 
 <!-- Sidebar Section -->
 
-  <nav class="w3-sidebar w3-card w3-theme-l3 w3-bar-block w3-collapse w3-large" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large w3-hover-blue-grey w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
+  <div class="w3-sidebar w3-theme-l5 w3-bar-block w3-large" id="mySidebar" style="display: none;">
+    
+    <button onclick="w3_close()" class="w3-right w3-theme-l5 w3-hover-blue-grey"><i class="fa fa-remove"></i></button>
  
   <h4 class="w3-card-item">Sermon List</h4>
 
@@ -720,14 +721,12 @@
   </div>
 </div>
 
-</nav>
+</div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:200px">
+<div class="w3-main">
 
 <!-- Main banner -->
   <div class="w3-container">
@@ -799,27 +798,13 @@
 <!-- Sidebar JavaScript -->
 
     <script>
-        // Get the Sidebar
-        var mySidebar = document.getElementById("mySidebar");
-        
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
-        
-        // Toggle between showing and hiding the sidebar, and add overlay effect
-        function w3_open() {
-          if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-            overlayBg.style.display = "none";
-          } else {
-            mySidebar.style.display = 'block';
-            overlayBg.style.display = "block";
-          }
+       // mySidebar w3.open and w3.close
+       function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
         }
-        
-        // Close the sidebar with the close button
+
         function w3_close() {
-          mySidebar.style.display = "none";
-          overlayBg.style.display = "none";
+          document.getElementById("mySidebar").style.display = "none";
         }
 
         // Accordion drop list - Testament

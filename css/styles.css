@@ -8,7 +8,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
     text-align: center;
     color: #025e85;
-    margin-top: 0;
 }
 
 .white {
@@ -39,12 +38,13 @@ img.rcorners {
 
 .w3-sidebar {
     z-index: 3;
-    width: 200px;
     top: 34px;
     bottom: 0;
     height: inherit;
     border-right: slategrey 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .w3-bottom {
     position: relative;
     width: 100%;
