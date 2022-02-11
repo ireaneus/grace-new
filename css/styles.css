@@ -2,12 +2,13 @@ html, body {
     font-family: 'PT Sans', sans-serif;
     margin: 0;
     font-size: 0.9rem;
+    background-color: tan;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
-    text-align: center;
     color: #025e85;
+    text-align: center;
 }
 
 .white {
@@ -16,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p.scripture {
     font-family: 'Courgette', cursive;
-    text-align: center;
 }
 
 a, button {
@@ -25,10 +25,6 @@ a, button {
 
 img {
     float: left;
-}
-
-img.width {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.rcorners {
@@ -45,12 +41,7 @@ img.rcorners {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.w3-bottom {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-}
-
-.w3-border-bottom {
-    border-bottom: 1px solid #7C99AC !important;
+.w3-panel {
+    margin: 0;
+    padding: 0;
 }
