@@ -2,7 +2,7 @@ html, body {
     font-family: 'PT Sans', sans-serif;
     margin: 0;
     font-size: 0.9rem;
-    background-color: tan;
+    background-color: oldlace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +35,7 @@ img.rcorners {
 .w3-sidebar {
     z-index: 3;
     top: 34px;
+    left: 5%;
     bottom: 0;
     height: inherit;
     border-right: slategrey 1px solid;
@@ -44,4 +45,9 @@ img.rcorners {
 .w3-panel {
     margin: 0;
     padding: 0;
+}
+
+.main {
+    background-color: white; 
+    width: 90%; 
 }
