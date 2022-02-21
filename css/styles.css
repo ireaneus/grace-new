@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     color: whitesmoke;
 }
 
+p {
+    font-size: 0.9rem;
+}
+
 p.scripture {
     font-family: 'Courgette', cursive;
 }
@@ -39,14 +43,4 @@ img.rcorners {
     height: inherit;
     border-right: slategrey 1px solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.w3-panel {
-    margin: 0;
-    padding: 0;
-}
-
-.main {
-    background-color: white; 
-    width: 90%; 
 }

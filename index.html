@@ -30,11 +30,11 @@
     <body>
 
 <!-- Whole panel main page-->
-  <div class="w3-panel w3-display-topmiddle w3-card-4 main">
+  <div class="w3-auto w3-card-4" style="background-color: white;">
 
 
 <!-- TopBar Section -->
-  <div class="w3-top">
+  <div class="w3-top w3-auto w3-card-4">
     <div class="w3-bar w3-theme-d1">
 
       <button class="w3-button w3-left w3-hover-blue-grey" onclick="w3_open()"><i class="fas fa-church"></i></button>
@@ -61,670 +61,1761 @@
 
 <!-- Sidebar Section -->
   <div class="w3-sidebar w3-theme-l4 w3-bar-block w3-large" id="mySidebar" style="display: none;">
+  <button onclick="w3_close()" class="w3-right w3-hover-blue-grey"><i class="fa fa-remove"></i></button>
+  <h4 class="w3-card-item">Sermon List</h4>
 
-<button onclick="w3_close()" class="w3-right w3-hover-blue-grey"><i class="fa fa-remove"></i></button>
-
-<h4 class="w3-card-item">Sermon List</h4>
 
 <!-- Old Testament button -->
-<button class="w3-button w3-block w3-left-align w3-hover-blue-grey" onclick="myAccFunc('OT')">OLD TESTAMENT <i class="fa fa-caret-down"></i></button>
+    <button class="w3-button w3-block w3-left-align w3-hover-blue-grey" onclick="myAccFunc('OT')">OLD TESTAMENT <i class="fa fa-caret-down"></i></button>
 
-<div id="OT" class="w3-bar-block w3-hide w3-white w3-card-4">
+    <div id="OT" class="w3-bar-block w3-hide w3-white w3-card-4">
 
-<!-- Daniel Modal -->
-<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-hover-blue-grey w3-left-align w3-block">Daniel</button>
+    <!-- Daniel Modal -->
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-hover-blue-grey w3-left-align w3-block">Daniel</button>
 
-<div id="id01" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-  <span onclick="document.getElementById('id01').style.display='none'" 
-  class="w3-button w3-display-topright">&times;</span>
-  <h2 class="white">Pastor Jack Hurley - Daniel Series</h2>
-</header>
-<div class="w3-container">
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Daniel</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-  <p class="w3-center">Daniel Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2 class="white">Pastor Jack Hurley - Daniel Series</h2>
+      </header>
+      
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>daniel part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part4.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part4.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part7.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part8.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part8.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part9.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part9.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part10.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part10.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part11.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part11.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part12.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part12.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part13.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part13.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part14.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part14.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part15.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part15.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part16.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part16.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part17.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part17.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part18.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part18.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part19.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part19.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part20.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part20.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part21.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part21.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part22.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part22.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part23.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part23.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part24.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part24.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part25.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part25.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part26.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part26.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part27.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part27.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>daniel part28.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Daniel/daniel_part28.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Daniel Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
-<!-- Habakkuk Modal -->
-<button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Habakkuk</button>
 
-<div id="id02" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-  <span onclick="document.getElementById('id02').style.display='none'" 
-  class="w3-button w3-display-topright">&times;</span>
-  <h2 class="white">Pastor Jack Hurley - Habakkuk Series</h2>
-</header>
-<div class="w3-container">
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Habakkuk</a>
+    <!-- Habakkuk Modal -->
+    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Habakkuk</button>
+
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+          <span onclick="document.getElementById('id02').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2 class="white">Pastor Jack Hurley - Habakkuk Series</h2>
+      </header>
+      
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+          <li><p>habakkuk part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part4.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part4.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part7.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>habakkuk part8.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Habakkuk/habakkuk_part8.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              </ul>
+              </div>
+     <footer class="w3-container w3-blue-grey">
+     <p class="w3-center">Habakkuk Sermon Series - add series summary</p>
+     </footer>
+     </div>
+    </div>
+      
 </div>
-<footer class="w3-container w3-blue-grey">
-  <p class="w3-center">Habakkuk Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
-</div>   <!-- Old Testament Accordion -->
+<!-- Old Testament Accordion -->
 
 <!-- New Testament button -->
-<button class="w3-button w3-block w3-left-align w3-hover-blue-grey" onclick="myAccFunc('NT')">NEW TESTAMENT <i class="fa fa-caret-down"></i></button>
+    <button class="w3-button w3-block w3-left-align w3-hover-blue-grey" onclick="myAccFunc('NT')">NEW TESTAMENT <i class="fa fa-caret-down"></i></button>
 
-<div id="NT" class="w3-bar-block w3-hide w3-white w3-card-4">
+    <div id="NT" class="w3-bar-block w3-hide w3-white w3-card-4">
 
-<!-- Acts Modal -->
-<button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-left-align w3-block w3-hover-blue-grey">Acts</button>
+    <!-- Acts Modal -->
+    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-left-align w3-block w3-hover-blue-grey">Acts</button>
 
-<div id="id03" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-  <span onclick="document.getElementById('id03').style.display='none'" 
-  class="w3-button w3-display-topright">&times;</span>
-  <h2 class="white">Pastor Jack Hurley - Acts Series</h2>
-</header>
-<div class="w3-container">
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-  <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Acts Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-  <p class="w3-center">Acts Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id03" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+          <span onclick="document.getElementById('id03').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2 class="white">Pastor Jack Hurley - Acts Series</h2>
+      </header>
+      
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>acts part01.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part01.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part02.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part02.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part03.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part03.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part04.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part04.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part05.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part05.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part06.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part06.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part07.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part07.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part08.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part08.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part09.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part09.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part10.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part10.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part11.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part11.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part12.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part12.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part13.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part13.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part15.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part15.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part16.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part16.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part18.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part18.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part19.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part19.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part20.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part20.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part21.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part21.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part22.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part22.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part23.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part23.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part24.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part24.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part25.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part25.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part26.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part26.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part27.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part27.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part28.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part28.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>acts part29.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Acts/acts_part29.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+      
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">Acts Sermon Series - add series summary</p>
+      </footer>
+      </div>
+    </div>
 
-<!-- Romans Modal -->
-<button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Romans</button>
 
-<div id="id04" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id04').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley - Romans Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Romans Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <!-- Romans Modal -->
+    <button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Romans</button>
 
-<!-- 1 Corinthians Modal -->
-<button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">1 Corinthians</button>
+    <div id="id04" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id04').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley - Romans Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Romans Part 1</a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Romans Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
-<div id="id05" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id05').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley - 1 Corinthians Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Corinthians Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">1 Corinthians Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <!-- 1 Corinthians Modal -->
+    <button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">1 Corinthians</button>
 
-<!-- 2 Corinthians Modal -->
-<button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">2 Corinthians</button>
+    <div id="id05" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id05').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley - 1 Corinthians Series</h2>
+      </header>
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>1corinthians part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part4.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part4.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part7.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part8.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part8.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part9.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part9.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part10.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part10.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part11.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part11.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part12.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part12.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part13.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part13.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part14.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part14.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part15.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part15.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part16.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part16.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part17.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part17.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part18.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part18.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part19.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part19.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part23.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part23.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part24.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part24.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part25.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part25.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part26.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part26.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part27.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part27.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part28.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part28.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part29.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part29.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part30.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part30.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part31.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part31.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part32.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part32.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part33.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part33.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part34.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part34.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part36.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part36.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part37.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part37.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part38.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part38.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part39.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part39.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part40.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part40.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part41.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part41.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part42.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part42.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part43.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part43.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part44.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part44.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part47.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part47.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part48.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part48.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>1corinthians part49.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part49.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+      
+              <li><p>1corinthians part51.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/1Corinthians/1corinthians_part51.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+      
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">Bible Survey Sermon Series - add series summary</p>
+      </footer>
+      </div>
+    </div>
+    
+    <!-- 2 Corinthians Modal -->
+    <button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">2 Corinthians</button>
 
-<div id="id06" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id06').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley - 2 Corinthians Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">2 Corinthians Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id06" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id06').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley - 2 Corinthians Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Corinthians - Coming Soon</a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">2 Corinthians Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
-<!-- Galatians Modal -->
-<button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Galatians</button>
+    <!-- Galatians Modal -->
+    <button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Galatians</button>
 
-<div id="id07" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id07').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Galatians Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Galatians Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Galatians Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id07" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id07').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  Galatians Series</h2>
+      </header>
+  
+  <div class="w3-modal-content w3-padding">
+      <ul class="w3-ul w3-border">
+          <li><p>galatians part1.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part1.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part2.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part3.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part3.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part4.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part4.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part5.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part5.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part6.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part6.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part7.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part7.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part8.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part8.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+      <li><p>galatians part9.mp3</p></li>
+          <audio controls>
+          <source src="sermons/Galatians/galatians_part9.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio></li>
+          <li><p>galatians part10.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part10.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part11.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part11.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part12.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part12.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part13.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part13.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part14.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part14.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part15.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part15.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part16.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part16.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part17.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part17.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part18.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part18.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part19.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part19.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part20.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part20.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+          <li><p>galatians part21.mp3</p></li>
+              <audio controls>
+              <source src="sermons/Galatians/galatians_part21.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio></li>
+      </ul>
+  </div>
+  <footer class="w3-container w3-blue-grey">
+  <p class="w3-center">Galatians Sermon Series - add series summary</p>
+  </footer>
+  </div>
+    </div>
+ 
 
+    <!-- Colossians Modal -->
+    <button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Colossians</button>
 
-<!-- Colossians Modal -->
-<button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Colossians</button>
-
-<div id="id08" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id08').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Colossians Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Colossians Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Colossians Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
-
+    <div id="id08" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id08').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  Colossians Series</h2>
+      </header>
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>colossians part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Colossians/colossians_part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>colossians part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Colossians/colossians_part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>colossians part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Colossians/colossians_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>colossians part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Colossians/colossians_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>colossians part8.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Colossians/colossians_part8.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">Colossians Sermon Series - add series summary</p>
+      </footer>
+    </div>
+    </div>
+  
 
 <!-- 1 Timothy Modal -->
-<button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">1 Timothy</button>
+    <button onclick="document.getElementById('id09').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">1 Timothy</button>
 
-<div id="id09" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id09').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  1 Timothy Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">1 Timothy Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">1 Timothy Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id09" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id09').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  1 Timothy Series</h2>
+      </header>
+      
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+            <li><p>1tim part1.mp3</p></li>
+            <audio controls>
+            <source src="sermons/1TIM/1tim_part1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part2.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part3.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part3.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part4.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part4.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part5.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part5.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part6.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part6.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part7.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part7.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part9.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part9.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part10.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part10.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part11.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part11.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part12.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part12.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part13.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part13.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+            <li><p>1tim part14.mp3</p></li>
+                <audio controls>
+                <source src="sermons/1TIM/1tim_part14.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio></li>
+          </ul>
+      </div>
+      
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">1 Timothy Sermon Series</p>
+      </footer>
+      </div>
+    </div>
 
 
 <!-- 2 Timothy Modal -->
-<button onclick="document.getElementById('id10').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">2 Timothy</button>
+    <button onclick="document.getElementById('id10').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">2 Timothy</button>
 
-<div id="id10" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id10').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  2 Timothy Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">2 Timothy Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">2 Timothy Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id10" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id10').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  2 Timothy Series</h2>
+      </header>
+      
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>2tim part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part4.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part4.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part7.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part8.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part8.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part9.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part9.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part10.mp3</p></li>
+              <audio controls>
+              <source src="sermons/2TIM/2tim_part10.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part11.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part11.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part12.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part12.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part13.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part13.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>2tim part14.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/2TIM/2tim_part14.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              </ul>
+          </div>
+      
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">2 Timothy Sermon Series - add series summary</p>
+      </footer>
+      </div>
+    </div>
 
-<!-- Titus Modal -->
-<button onclick="document.getElementById('id11').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Titus</button>
 
-<div id="id11" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id11').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Titus Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Titus Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <!-- Titus Modal -->
+    <button onclick="document.getElementById('id11').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Titus</button>
 
-<!-- Jude Modal -->
-<button onclick="document.getElementById('id12').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Jude</button>
+    <div id="id11" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id11').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Titus Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Titus Part 1</a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Titus Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
-<div id="id12" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id12').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Jude Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Jude Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <!-- Jude Modal -->
+    <button onclick="document.getElementById('id12').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Jude</button>
 
-<!-- Revelation Modal -->
-<button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Revelation</button>
+    <div id="id12" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id12').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Jude Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Jude Part 1</a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Jude Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
-<div id="id13" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id13').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Revelation Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Revelation Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <!-- Revelation Modal -->
+    <button onclick="document.getElementById('id13').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">Revelation</button>
 
-</div>  <!-- Closing New Testament Accordion list-->
+    <div id="id13" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id13').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Revelation Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Revelation Part 1</a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Revelation Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
+
+    </div>  
+<!-- Closing New Testament Accordion list-->
 
 <!-- Bible Survey Modal -->
-<button onclick="document.getElementById('id14').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">BIBLE SURVEY</button>
+    <button onclick="document.getElementById('id14').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">BIBLE SURVEY</button>
 
-<div id="id14" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id14').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Bible Survey Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Bible Survey - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Bible Survey Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id14" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id14').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Bible Survey Series</h2>
+    </header>
+    <div class="w3-modal-content w3-padding">
+      <ul class="w3-ul w3-border">
+        <li><p>Amos</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/amos.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Daniel Part 1</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/daniel-part1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Daniel Part 2</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/daniel-part2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Ecclesiates</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/ecclesiates.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Esther</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/esther.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Ezekiel Part 1</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/ezekiel-part1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Ezekiel Part 2</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/ezekiel-part2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Ezekiel Part 3</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/ezekiel-part3.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Genesis</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/genesis.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Habukkuk</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/habukkuk.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Haggai</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/haggai.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Hosea</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/hosea.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Isaiah</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/isaiah.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Jeremiah</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/jeremiah.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Joel</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/joel.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Jonah</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/jonah.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Lamentations</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/lamentations.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Malachi</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/malachi.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Micah</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/micah.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Naham</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/naham.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Obadiah</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/obadiah.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Poetry Intro</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/poetryintro.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Proverbs</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/proverbs.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Psalms</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/psalms.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Song of Solomon</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/song-of-solomon.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Zechariah Part 1</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/zechariah-part1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Zechariah Part 2</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/zechariah-part2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        <li><p>Zephaniah</p>
+          <audio controls>
+            <source src="sermons/BibleSurvey/zephaniah.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        </ul>
+    </div>
+  
+  <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Bible Survey Sermon Series - add series summary</p>
+  </footer>
+    </div>
+    </div>
 
 <!-- Christmas Modal -->
-<button onclick="document.getElementById('id15').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">CHRISTMAS</button>
+    <button onclick="document.getElementById('id15').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">CHRISTMAS</button>
 
-<div id="id15" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id15').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Christmas Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Christmas - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Christmas Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id15" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id15').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  Christmas Series</h2>
+      </header>
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+          <li><p>christmas 2001.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Christmas/christmas_2001.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>history and the birth of christ.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Christmas/history_and_the_birth_of_christ.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>the three kings.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/Christmas/the_three_kings.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+      <footer class="w3-container w3-blue-grey">
+          <p class="w3-center">Christmas Sermon Series</p>
+          </footer>
+          </div>
+    </div>
 
 <!-- Doctrine of the Bible Modal -->
-<button onclick="document.getElementById('id16').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">DOCTRINE OF THE BIBLE</button>
+    <button onclick="document.getElementById('id16').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">DOCTRINE OF THE BIBLE</button>
 
-<div id="id16" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id16').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Doctrine of the Bible Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Doctrine of the Bible - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Doctrine of the Bible Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id16" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id16').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  Doctrine of the Bible Series</h2>
+      </header>
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>01 doctrine of the bible.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/DoctrineBible/01_doctrine_of_the_bible.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>02 doctrine of god.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/DoctrineBible/02_doctrine_of_god.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>03 doctrine of creation.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/DoctrineBible/03_doctrine_of_creation.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>04 doctrine of sin.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/DoctrineBible/04_doctrine_of_sin.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>05 doctrine of the church.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/DoctrineBible/05_doctrine_of_the_church.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+      
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">Doctrine of the Bible Sermon Series</p>
+      </footer>
+      </div>
+    </div>
+
 
 <!-- Entering the Land Modal -->
-<button onclick="document.getElementById('id17').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">ENTERING THE LAND</button>
+    <button onclick="document.getElementById('id17').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">ENTERING THE LAND</button>
 
-<div id="id17" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id17').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Entering the Land Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Entering the Land Part - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Entering the Land Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id17" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-blue-grey"> 
+      <span onclick="document.getElementById('id17').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+      <h2 class="white">Pastor Jack Hurley -  Entering the Land Series</h2>
+      </header>
+      
+      <div class="w3-modal-content w3-padding">
+          <ul class="w3-ul w3-border">
+              <li><p>entering-christian-service-part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-christian-service-part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-christian-service-part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-christian-service-part4.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part4.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-christian-service-part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-christian-service-part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-christian-service-part7.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-christian-service-part7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the kingdom of god.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_kingdom_of_god.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part4.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part4.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part7.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part7.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part8.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part8.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part9.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part9.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part10.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part10.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part11.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part11.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part12.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part12.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part13.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part13.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part14.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part14.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part15.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part15.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part16.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part16.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part17.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part17.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part18.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part18.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part19.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part19.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part20.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part20.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part21.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part21.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part22.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part22.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering the land part23.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering_the_land_part23.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-the-war part1.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-the-war_part1.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-the-war part2.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-the-war_part2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-the-war part3.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-the-war_part3.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-the-war part5.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-the-war_part5.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+              <li><p>entering-the-war part6.mp3</p></li>
+                  <audio controls>
+                  <source src="sermons/EnteringLand/entering-the-war_part6.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio></li>
+          </ul>
+      </div>
+      <footer class="w3-container w3-blue-grey">
+      <p class="w3-center">Entering the Land Sermon Series - add series summary</p>
+      </footer>
+      </div>
+    </div>  
+
 
 <!-- Gospel in the stars Modal -->
-<button onclick="document.getElementById('id18').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">GOSPEL IN THE STARS</button>
+    <button onclick="document.getElementById('id18').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">GOSPEL IN THE STARS</button>
 
-<div id="id18" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id18').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Gospel in the stars Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Gospel in the stars Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id18" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id18').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Gospel in the stars Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Gospel in the stars - </a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Gospel in the stars Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
 
 <!-- Prophecy Modal -->
-<button onclick="document.getElementById('id19').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">PROPHECY</button>
+    <button onclick="document.getElementById('id19').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">PROPHECY</button>
 
-<div id="id19" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id19').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Prophecy Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Prophecy Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id19" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id19').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Prophecy Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Prophecy - </a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Prophecy Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
 
 <!-- Resurrection Modal -->
-<button onclick="document.getElementById('id20').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">RESURRECTION</button>
+    <button onclick="document.getElementById('id20').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">RESURRECTION</button>
 
-<div id="id20" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id20').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Resurrection Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Resurrection Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
-
-
-<!-- Topical Modal -->
-<button onclick="document.getElementById('id21').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">TOPICAL</button>
-
-<div id="id21" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id21').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Topical Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Topical Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id20" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id20').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Resurrection Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Resurrection - </a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Resurrection Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
 
 <!-- Topical Modal -->
-<button onclick="document.getElementById('id22').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">TULIP</button>
+    <button onclick="document.getElementById('id21').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">TOPICAL</button>
 
-<div id="id22" class="w3-modal">
-<div class="w3-modal-content w3-card-4">
-<header class="w3-container w3-blue-grey"> 
-<span onclick="document.getElementById('id22').style.display='none'" 
-class="w3-button w3-display-topright">&times;</span>
-<h2 class="white">Pastor Jack Hurley -  Tulip Series</h2>
-</header>
-<div class="w3-container">
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-<a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Tulip - </a>
-</div>
-<footer class="w3-container w3-blue-grey">
-<p class="w3-center">Tulip Sermon Series - add series summary</p>
-</footer>
-</div>
-</div>
+    <div id="id21" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id21').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Topical Series</h2>
+    </header>
+    <div class="w3-container">
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    <a class="w3-bar-item w3-button w3-hover-blue-grey" href="#">Topical - </a>
+    </div>
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Topical Sermon Series - add series summary</p>
+    </footer>
+    </div>
+    </div>
 
-  </div>
+
+<!-- Tulip Modal -->
+    <button onclick="document.getElementById('id22').style.display='block'" class="w3-button w3-block w3-left-align w3-hover-blue-grey">TULIP</button>
+
+    <div id="id22" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+
+    <header class="w3-container w3-blue-grey"> 
+    <span onclick="document.getElementById('id22').style.display='none'" 
+    class="w3-button w3-display-topright">&times;</span>
+    <h2 class="white">Pastor Jack Hurley -  Tulip Series</h2>
+    </header>
+
+    <div class="w3-modal-content w3-padding">
+      <ul class="w3-ul w3-border">
+        <li><p>Total Depravity</p>
+          <audio controls>
+            <source src="sermons/Tulip/total-depravity.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+
+        <li><p>Unconditional Election</p>
+          <audio controls>
+            <source src="sermons/Tulip/unconditional-election.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio></li>
+        
+        <li><p>Limited Atonement</p>
+        <audio controls>
+          <source src="sermons/Tulip/limited-atonement.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio></li>
+        
+        <li><p>Irresistible Grace</p>
+        <audio controls>
+            <source src="sermons/Tulip/irresistible-grace.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio></li>
+        
+        <li><p>Perseverance of the Saints</p>
+        <audio controls>
+          <source src="sermons/Tulip/perseverence-of-the-saints.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio></li>
+        
+        <li><p>Sharing the Faith</p>
+        <audio controls>
+          <source src="sermons/Tulip/sharing-faith.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio></li>
+        
+        <li><p>The Great Commission</p>
+        <audio controls>
+          <source src="sermons/Tulip/the-great-commission.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio></li>
+      </ul>
+    </div>
+
+    <footer class="w3-container w3-blue-grey">
+    <p class="w3-center">Tulip Sermon Series - The sovereign election of the body of Christ.</p>
+    </footer>
+
+    </div>
+    </div>  
+    <!-- Tulip Series closing -->
+
+</div>   
+<!-- Sidebar closing -->
 
 <!-- Main banner -->
   <div class="w3-row w3-padding-top-64">
@@ -775,8 +1866,8 @@ class="w3-button w3-display-topright">&times;</span>
           </div>
 
 <!-- Footer Section -->
-      <div class="w3-cell-row">
-        <div class="w3-container w3-cell w3-theme-d1">
+      <div class="w3-row">
+        <div class="w3-container w3-card-4 w3-theme-d1">
           <p align="center" class="scripture"><i>"The Lord bless you, and keep you; <br>The Lord make His face shine on you, <br>And be gracious to you; <br>The Lord lift up His countenance on you, <br>And give you peace."</i></p>
           <p align="center">Num. 6:24-26</p>
         </div>
